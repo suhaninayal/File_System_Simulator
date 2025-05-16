@@ -346,7 +346,9 @@ def main():
         disk_scheduling_page()
     elif selected_page == "Disk Visualization":
         disk_visualization_page()
-
+    st.markdown("---")
+    st.caption("Developed by Suhani Nayal & Team – File System Simulator")
+    
 
 if __name__ == "__main__":
     main()
