@@ -327,8 +327,8 @@ def disk_scheduling_page():
 
 def main():
     pages = [
-        "Create File", "View Files", "Edit File", "Delete File",
-        "Disk Visualization", "Process Simulation", "Disk Scheduling"
+        "Create File", "View Files", "Edit File", "Delete File", "Process Simulation", "Disk Scheduling",
+        "Disk Visualization"
     ]
     selected_page = st.sidebar.radio("📚 Select a Page", pages)
 
@@ -340,12 +340,12 @@ def main():
         edit_file_page()
     elif selected_page == "Delete File":
         delete_file_page()
-    elif selected_page == "Disk Visualization":
-        disk_visualization_page()
     elif selected_page == "Process Simulation":
         process_simulation_page()
     elif selected_page == "Disk Scheduling":
         disk_scheduling_page()
+    elif selected_page == "Disk Visualization":
+        disk_visualization_page()
 
 
 if __name__ == "__main__":
