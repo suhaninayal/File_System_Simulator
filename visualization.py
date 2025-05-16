@@ -19,7 +19,7 @@ def show_disk():
         ax.add_patch(plt.Rectangle((i, 0), 1, 1, edgecolor='black', facecolor=color))
 
         # Add a symbol inside each block
-        symbol = '.' if block == 'free' else '■'
+        symbol = '□' if block == 'free' else '■'
         ax.text(i + 0.5, 0.5, symbol, ha='center', va='center', fontsize=8)
 
     # Set plot limits and remove axes
