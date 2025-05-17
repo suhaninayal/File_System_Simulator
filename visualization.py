@@ -36,7 +36,7 @@ def show_disk():
     return fig
 
 
-def show_disk_access_animation(sequence, disk_size=100):
+def show_disk_access_animation(sequence, disk_size=99):
     """Create an animation-like visualization of disk head movement.
 
     Args:
@@ -59,7 +59,7 @@ def show_disk_access_animation(sequence, disk_size=100):
         ax.annotate('',
                     xy=(sequence[i], 0),
                     xytext=(sequence[i - 1], 0),
-                    arrowprops=dict(arrowstyle='->', color='red', lw=1.5))
+                    arrowprops=dict(arrowstyle='->', color='red', lw=1.7))
 
         # Add a small label with the sequence number
         ax.text(sequence[i], 0.2, f"{i}", ha='center')

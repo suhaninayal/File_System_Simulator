@@ -1,7 +1,7 @@
 from storage import save_state, load_state
 from datetime import datetime
 
-disk_size = 100
+disk_size = 50
 disk = ['free'] * disk_size
 file_directory = {}
 
