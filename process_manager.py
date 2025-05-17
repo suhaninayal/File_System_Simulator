@@ -158,5 +158,6 @@ class ProcessManager:
                     color='white',
                     fontweight='bold')
 
+        ax.grid(True, linestyle='--', alpha=0.5)
         plt.tight_layout()
         return fig
