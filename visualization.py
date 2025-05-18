@@ -46,7 +46,7 @@ def show_disk_access_animation(sequence, disk_size=99):
     Returns:
         matplotlib figure
     """
-    fig, ax = plt.subplots(figsize=(12, 4.05))
+    fig, ax = plt.subplots(figsize=(12, 4))
 
     # Plot the disk track
     ax.plot([0, disk_size], [0, 0], 'k-', linewidth=2)
