@@ -8,7 +8,7 @@ def show_disk():
     disk = get_disk()
     fig, ax = plt.subplots(figsize=(12, 2))
     unique_files = list(set(b for b in disk if b != 'free'))
-
+    
     # Create visually distinct colors for files
     color_map = {name: f"#{hash(name) % 0xFFFFFF:06x}" for name in unique_files}
     color_map['free'] = "#d3d3d3"  # Light gray for free blocks
@@ -46,7 +46,7 @@ def show_disk_access_animation(sequence, disk_size=99):
     Returns:
         matplotlib figure
     """
-    fig, ax = plt.subplots(figsize=(12, 4))
+    fig, ax = plt.subplots(figsize=(12, 4.05))
 
     # Plot the disk track
     ax.plot([0, disk_size], [0, 0], 'k-', linewidth=2)
