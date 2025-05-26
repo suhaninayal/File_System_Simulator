@@ -160,7 +160,7 @@ def c_look_scheduling(requests, start):
     return sequence
 
 
-def visualize_disk_scheduling(algorithm_name, sequence, disk_size=100):
+def visualize_disk_scheduling(algorithm_name, sequence, disk_size=50):
     """Visualize the disk scheduling algorithm.
 
     Args:
